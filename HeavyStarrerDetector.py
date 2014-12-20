@@ -70,4 +70,5 @@ running = True
 while running:
     cmd = raw_input("<< ")
     if cmd == "stop":
+        c.logout()
         running = False
