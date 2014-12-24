@@ -60,7 +60,7 @@ def on_event(event, client):
             uname = usr.name
             print("Heavy starrer detected: " + uname)
             for m in messages:
-                msg_to_post = m.replace("$ping", "@" + uname).replace("$user", uname)
+                msg_to_post = m.replace("$ping", "@" + uname.replace(" ", "")).replace("$user", uname)
                 r.send_message(msg_to_post)
             remove_user_from_list(hs)
 
