@@ -10,4 +10,8 @@ You might also want to change the message when a heavy starrer is detected; curr
 
 ## Running the bot ##
 
-When you run it, it will ask for the host of the chat room, the room number, and credentials for the bot to log on. When it's started, you'll see `<<` on your terminal and you can input commands. Currently, the only command is `stop` which stops the bot.
+When you run it, it will ask for the host of the chat room, the room number, and credentials for the bot to log on. When it's started, you'll see `<<` on your terminal and you can input commands. Currently, the commands are:
+
+ - `stop`: stops the bot.
+ - `disable`: disables the bot. It doesn't check for heavy starrers until you enable it again.
+ - `enable`: enables the bot when it's disabled.
