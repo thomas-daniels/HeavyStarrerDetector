@@ -47,8 +47,9 @@ def check():
             heavy_starrers.append(ms)
     return heavy_starrers
 
+disabled = False
 def on_event(event, client):
-    if not isinstance(event, MessageStarred):
+    if disabled or not isinstance(event, MessageStarred):
         return
     curr_date = datetime.utcnow()
     starrers.append((event.user.id, curr_date))
@@ -73,3 +74,9 @@ while running:
     if cmd == "stop":
         c.logout()
         running = False
+    elif cmd == "disable":
+        disabled = True
+        print("Now disabled; use the command enable to re-enable the bot.")
+    elif cmd == "enable":
+        disabled = False
+        print("Bot enabled.")
