@@ -1,5 +1,7 @@
 # Heavy Starrer Detector #
 
+*Note: information about who starred a message, is now to longer passed in the web socket. This means that HeavyStarrerDetector cannot be used anymore to detect star trolls.*
+
 Heavy Starrer Detector is a bot that lurks in Stack Exchange chat rooms and detects people who star many messages at a short time. If someone has 3 starring actions (= star or unstar) within 1 minute, they get a ping telling them that much starring can be inappropriate if they're starring trivial messages.
 
 ## Setup ##
